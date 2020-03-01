@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<suite name="Demo suite 1" verbose="1" >
+    <parameter name="Browser" value="Chrome"/>
+
+    <test name="Demo test 1" >
+        <!--<classes>
+            <class name="com.techbeamers.TestA"/>
+        </classes>-->
+        <packages>
+            <package name="com.auto.tests.*" />
+        </packages>
+    </test>
+</suite>
