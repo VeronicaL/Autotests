@@ -12,7 +12,7 @@ import org.testng.annotations.Test;
 
 import java.util.concurrent.TimeUnit;
 
-public class ChromeTest {
+public class ChromeTest extends BaseTest{
 
     private WebDriver driver;
 
@@ -20,11 +20,6 @@ public class ChromeTest {
     public void beforeClass() {
         driver = new ChromeDriver();
         driver.manage().window().maximize();
-    }
-
-    @AfterClass
-    public void afterClass() {
-        driver.quit();
     }
 
     @Test
@@ -41,5 +36,10 @@ public class ChromeTest {
 
 //        Assert.assertEquals(text, search_text, "Text not found!");
         Assert.assertEquals(search_text, search_text, "Text not found!");
+    }
+
+    @AfterClass
+    public void afterClass() {
+        driver.quit();
     }
 }
