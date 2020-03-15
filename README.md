@@ -7,3 +7,6 @@ mvn clean test -DsuiteXmlFile=TestNGSuiteConfig.xml -Denv=dev: run on dev in Chr
 mvn clean test -DsuiteXmlFile=TestNGSuiteConfig.xml -Denv=dev -Dbrowser=FIREFOX: run on dev and in Firefox
 
 if run using right click on testNG xml - run on qa and Chrome
+
+
+log4j.rootLogger=DEBUG, stdout - Logger is set to debug priority.
